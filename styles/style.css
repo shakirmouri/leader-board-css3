@@ -7,12 +7,16 @@ body{
 }
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .container{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 /* top players styles */
     .section-title{
@@ -44,10 +48,16 @@ main{
     }
     hr{
         border: 1px solid #D1D1D1;
+        margin-bottom: 27px;
     }
     /* --------------------------
               Top Blogs Styles 
     -----------------------------*/
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 26px;
+    }
     .blog{
         display: flex;
     }
@@ -69,4 +79,9 @@ main{
         text-decoration: none;
         font-size: 16px;
         color: #562EFF;
+    }
+    /* Courses Style */
+    .course .course-banner img{
+        width: 224px;
+        height: 104px;
     }
